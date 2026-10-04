@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Login Page</title>
+</head>
+<body>
+
+    <!-- Main Container for the Login Form -->
+    <div class="login-container">
+        <h2>Login to the website</h2>
+        
+        <!-- The form element securely routes data using the POST method -->
+        <form action="/login-endpoint" method="POST">
+            
+            <!-- Username / Email Field -->
+            <div class="form-group">
+                <label for="username">Username or Email:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Remember Me & Forgot Password Utilities -->
+            <div class="form-options">
+                <label>
+                    <input type="checkbox" name="remember"> Remember me
+                </label>
+                <a href="#forgot-password">Forgot Password?</a>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Log In</button>
+            
+        </form>
+
+        <!-- Link to Registration Page -->
+        <p class="signup-link">
+            Don't have an account? <a href="#register">Sign up here</a>
+        </p>
+    </div>
+
+</body>
+</html>
